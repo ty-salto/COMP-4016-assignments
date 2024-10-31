@@ -17,8 +17,11 @@ metadata:
  name: assign-02-secret
  namespace: jsalto
 type: Opaque
-data:
- secretValue: c2VjcmV0U25ha2U=
+#data:
+ #secretValue: c2VjcmV0U25ha2U=
+stringData:
+  secretValue: secretSnake
+
 ---
 apiVersion: apps/v1
 kind: Deployment

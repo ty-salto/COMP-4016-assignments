@@ -1,0 +1,16 @@
+Name: Joseph Tyronne Salto
+Student#: A01060698
+
+Repository: https://github.com/ty-salto/COMP-4016-assignments
+Comments:   Image for the assignment 02 can be pulled in the docker hub repo  
+ 	    Both the GitHub repo and docker hub repo are public
+	    Source code folder name is a01060698comp4016assign02
+            Only 1 yaml file assignment 02, everything should work once the yaml file is applied
+            secret's data secretValue has been converted to Base 64
+            Namespace is assigned in the yaml file
+            Tested the file and process from pulling the image until deployment using yaml 
+             
+
+Java Spring
+Image:      tysalto/comp4016:assign01 (docker pull tysalto/comp4016:assign02)
+

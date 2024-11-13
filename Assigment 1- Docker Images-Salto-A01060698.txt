@@ -1,0 +1,25 @@
+Name: Joseph Tyronne Salto
+Student#: A01060698
+
+Java Spring
+Repository: https://github.com/ty-salto/COMP-4016-assignments
+Image:      tysalto/comp4016:assign01 (docker pull tysalto/comp4016:assign01)
+Command:    docker run -p 8080:8080 tysalto/comp4016:assign01
+Comment:    Both the GitHub repo and docker hub repo are public
+	    Source code folder name is a01060698comp4016assign01
+	    Container internal port is port 8080 and the host port I used is port 8080
+Test:       curl localhost:8080/foo
+   	    curl -H "Accept: application/json" -H "Content-Type: application/json" -X POST --data '{"name": "Prabh"}' localhost:8080/hello
+            curl localhost:8080/kill
+
+Node.js
+Repository: https://github.com/ty-salto/COMP-4016-assignments
+Image:      tysalto/comp4016:assign01nodejs (docker pull tysalto/comp4016:assign01nodejs)
+Command:    docker run -p 8081:8080 tysalto/comp4016:assign01
+Comment:    Both the GitHub repo and docker hub repo are public
+            Source code folder name is a01060698comp4016assign01nodejs
+	    End point will be port 8080 same as what in the assignment instructions.
+	    Container internal port is port 8080 and the host port I used is port 8081 (because I run both container at the same time) 
+Test:       curl localhost:8081/foo
+   	    curl -H "Accept: application/json" -H "Content-Type: application/json" -X POST --data '{"name": "Prabh"}' localhost:8081/hello
+            curl localhost:8081/kill

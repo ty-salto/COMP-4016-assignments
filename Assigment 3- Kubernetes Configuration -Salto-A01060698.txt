@@ -1,0 +1,19 @@
+Name: Joseph Tyronne Salto
+Student#: A01060698
+
+Repository: https://github.com/ty-salto/COMP-4016-assignments
+Comments:   Image for the assignment 03 can be pulled in the docker hub repo  
+ 	    Both the GitHub repo and docker hub repo are public
+	    Source code folder name is a01060698comp4016assign03
+            Only 1 yaml file assignment 03, everything should work once the yaml file is applied
+            Post Request successfully save using the json data sent
+            Get Request for data persistence successfully achieved
+            Get Request for busy weight should be achieve, using the metric, CPU goes beyond 30% and the replicas reach the Max which is 5 for a little bit more than 3 minutes
+            readiness Probe:
+		- two service was created, external access using nodport with port 30010 and internal access using port 30009
+		- I am not sure what you mean by "Make this use the namespace probe" but the namespace used is the same throughout the namespaces "jsalto"
+                - Deleted the Deployment using the name "assign-03-is-alive-deployment" which successfully fail the readiness probe of the statfulset              
+
+Java Spring
+Image:      tysalto/comp4016:assign03 (docker pull tysalto/comp4016:assign03)
+
